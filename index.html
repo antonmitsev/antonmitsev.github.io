@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Anton Mitsev's GitHub Project</title>
-  </head>
-  <body>
-    <h1>Anton Mitsev GitHub Projects</h1>
-    <p><strong>By Anton Mitsev</strong></p>
-    <p style="position: absoulte; bottom: 1em;right: 1em">&copy; 2018-2019 Anton Mitsev</p>
-  </body>
-</html>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anton Mitsev's GitHub Project</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      position: relative;
+    }
+
+    html,
+    body {
+      height: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    body>.container {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 1024px;
+      margin: 0 auto;
+    }
+
+    body>.container>* {
+      flex: 0 0 1em;
+    }
+
+    main {
+      padding-bottom: 4rem;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 3rem;
+      box-shadow: 0 0 15px 5px #ccc;
+      display: flex;
+      flex-direction: row;
+    }
+
+    footer>p {
+      flex-grow: 1;
+      text-align: right;
+      padding-right: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <h1>Anton Mitsev GitHub Projects</h1>
+      <p><strong>By Anton Mitsev</strong></p>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2018-2019 Anton Mitsev</p>
+  </footer>
+</body>
+
+</html>
