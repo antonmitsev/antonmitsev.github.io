@@ -20,6 +20,19 @@
       min-height: 100%;
       margin: 0;
       padding: 0;
+      font-size: 100%;
+      color: #121416;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    a {
+      color: #446434;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-shadow: 0 0 1px #333;
     }
 
     body {
@@ -39,15 +52,18 @@
       flex: 0 0 1em;
     }
 
-    main {
-      padding-bottom: 4rem;
+    ul {
+      list-style-type: none;
     }
 
+    main {
+      padding: 4rem 0;
+    }
+
+    header,
     footer {
       position: fixed;
-      bottom: 0;
       width: 100%;
-      height: 3rem;
       box-shadow: 0 0 15px 5px #ccc;
       display: flex;
       flex-direction: row;
@@ -55,15 +71,32 @@
       background-color: #fcfcfc;
     }
 
+    header {
+      top: 0;
+      height: 5rem;
+      padding: 0 1rem;
+    }
+
+    footer {
+      bottom:0;
+      height: 3rem;
+      padding: 0 1rem;
+    }
+
     footer>p {
       flex-grow: 1;
       text-align: right;
-      padding-right: 1em;
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <p>Projects</p>
+    <ul class="menu">
+      <li><a href="/http-check/">HttpCheck</a></li>
+    </ul>
+  </header>
   <div class="container">
     <main>
       <h1>Anton Mitsev GitHub Projects</h1>
@@ -71,7 +104,7 @@
     </main>
   </div>
   <footer>
-    <p>&copy; 2018-2019 Anton Mitsev</p>
+    <p>&copy; 2018-2019 <a href="https://www.tonymitsev.com/" target="_blank" alt="Anton Mitsev's personal web site">Anton Mitsev</a></p>
   </footer>
 </body>
 
